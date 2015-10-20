@@ -96,8 +96,8 @@ def main():
             
             #download videos
             for videourl in videourls:
-                pass
-                os.system("python %s %s --write-description --all-subs -i -c -o '%s/%%(title)s (%s)-%%(id)s.%%(ext)s'" % (youtubedl, videourl, directordir, directorname))
+                command = u"python %s %s --write-description --all-subs -i -c -o '%s/%%(title)s (%s)-%%(id)s.%%(ext)s'" % (youtubedl, videourl, directordir, directorname))
+                os.system(command.encode('utf-8'))
 
 if __name__ == '__main__':
     main()
