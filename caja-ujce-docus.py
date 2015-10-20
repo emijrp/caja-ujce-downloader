@@ -22,8 +22,8 @@ import time
 import urllib2
 
 def main():
-    youtubedl = './youtube-dl' # path to youtube-dl script, needed to download the videos obviosly
-    os.system('%s -U' % youtubedl)
+    youtubedl = 'youtube-dl' # path to youtube-dl script, needed to download the videos obviosly
+    os.system('python %s -U' % youtubedl)
     url = 'http://archivo.juventudes.org/directora'
     print 'Retrieving', url
     try:
